@@ -1,0 +1,102 @@
+# 🎮 DOJO Multi-Account Betting Bot
+
+Многопоточный бот для автоматических ставок в игре [Dojo3](https://www.dojo3.io/?inviteCode=DG23U4&sourceType=WEB).  
+Работает с несколькими JWT-токенами параллельно и автоматически делает ставку раз в минуту.
+
+A multi-threaded bot for automated betting in the game [Dojo3](https://www.dojo3.io/?inviteCode=DG23U4&sourceType=WEB).  
+It runs multiple JWT tokens in parallel and places a bet once per minute.
+
+---
+
+## 📦 Установка / Installation
+
+1. Клонируйте репозиторий и установите зависимости:  
+   Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourname/deathfun-bot.git
+cd deathfun-bot
+npm install
+```
+
+2. Убедитесь, что установлены необходимые библиотеки:  
+   Make sure the required packages are installed:
+
+```bash
+npm install chalk@4 p-limit@3
+```
+
+> ⚠ Если в `package.json` присутствует `"type": "module"`, либо удалите его, либо используйте `import` вместо `require`.
+
+---
+
+## 🧾 Настройка токенов / Token Setup
+
+Создайте файл `tokens.txt` в корне проекта.  
+Добавьте по одному JWT-токену в каждой строке:
+
+Create a `tokens.txt` file in the project root.  
+Add one JWT token per line:
+
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6...
+eyJhbGciOiJIUzI1NiIsInR5cCI6...
+...
+```
+
+---
+
+## ⚙️ Настройки / Configuration
+
+Откройте файл `index.js` и измените параметры:  
+Open `index.js` and update the following values:
+
+```js
+const THREADS = 4        // Количество потоков / Number of concurrent threads
+const MAX_GAMES = 5      // Игр на аккаунт / Games per account
+const BET_AMOUNT = 200   // Сумма ставки / Bet amount per game
+```
+
+---
+
+## ▶️ Запуск / Run the Bot
+
+```bash
+node index.js
+```
+
+### Логи будут содержать / Output includes:
+
+- Аккаунт и его токен / Token used for account  
+- Баланс до и после ставки / Balance before and after the bet  
+- Ошибки, если есть / Errors if any  
+- Количество сыгранных игр / Number of completed games
+
+---
+
+## 💡 Поведение бота / Bot Behavior
+
+- Проверяет баланс перед каждой ставкой  
+  *Checks balance before each bet*
+- Делает ставку на случайный токен из доступных (5 шт)  
+  *Bets on a random token from the available 5*
+- Повторяет цикл каждую минуту (в 18–20 секунде)  
+  *Repeats the cycle every minute (around 18–20 seconds)*
+- Завершает работу после заданного количества игр на аккаунт  
+  *Stops after the defined number of games per account*
+
+---
+
+## 🧠 Используемые технологии / Tech Stack
+
+- Node.js
+- [`chalk@4`](https://www.npmjs.com/package/chalk) — цветной вывод / terminal colors
+- [`p-limit@3`](https://www.npmjs.com/package/p-limit) — управление параллелизмом / concurrency control
+- `fetch` — HTTP-запросы / HTTP requests
+
+---
+
+## 📄 Лицензия / License
+
+MIT License — use at your own risk.  
+MIT Лицензия — используйте на свой страх и риск.

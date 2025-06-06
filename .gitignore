@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+dist/
+.DS_Store
+
+# Token files
+tokens.txt
+
+# Logs
+logs/
+*.log
+
+# System
+Thumbs.db

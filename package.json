@@ -1,0 +1,18 @@
+{
+	"name": "dojo-bet-bot",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"p-limit": "^3.1.0"
+	},
+	"description": "Многопоточный бот для автоматических ставок в игре [Dojo3](https://www.dojo3.io/?inviteCode=DG23U4&sourceType=WEB).   Работает с несколькими JWT-токенами параллельно и автоматически делает ставку раз в минуту.",
+	"main": "index.js",
+	"devDependencies": {},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs"
+}
