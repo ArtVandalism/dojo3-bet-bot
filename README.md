@@ -10,8 +10,8 @@ It runs multiple JWT tokens in parallel and places a bet once per minute.
 
 ## 📦 Установка / Installation 
 
-1. Клонируйте репозиторий, установите [Nodejs](https://nodejs.org/en) и установите зависимости:  
-   Clone the repository, install [Nodejs](https://nodejs.org/en) and install dependencies:
+1. Клонируйте репозиторий, установите [Nodejs](https://nodejs.org/en) и зависимости:  
+   Clone the repository, install [Nodejs](https://nodejs.org/en) and  dependencies:
 
 ```bash
 git clone https://github.com/ArtVandalism/dojo3-bet-bot.git
