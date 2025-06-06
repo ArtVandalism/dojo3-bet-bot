@@ -43,7 +43,29 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6...
 eyJhbGciOiJIUzI1NiIsInR5cCI6...
 ...
 ```
+---
+## 🔑 Где взять JWT токен / How to get your JWT token
+🇷🇺 Инструкция (для браузера)
 
+ - Перейдите на сайт [Dojo3](https://www.dojo3.io/?inviteCode=DG23U4&sourceType=WEB) и войдите через Abstract кошелек.
+
+ - Откройте инструменты разработчика:
+ - F12 → вкладка Application → слева в списке Cookie → выберите https://www.dojo3.io
+
+ - Найдите ключ jwt — это и есть ваш токен.
+
+ - Скопируйте его и вставьте в tokens.txt, одна строка — один токен.
+
+🇺🇸 Instructions (browser method)
+
+ - Go to [Dojo3](https://www.dojo3.io/?inviteCode=DG23U4&sourceType=WEB) and log in via Abstract wallet.
+
+ - Open developer tools:
+ - F12 → Application tab → left panel: Cookie → choose https://www.dojo3.io
+
+ - Find the key jwt — that's your authentication token.
+
+ - Copy it and paste it into tokens.txt, one token per line.
 ---
 
 ## ⚙️ Настройки / Configuration
