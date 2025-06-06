@@ -1,4 +1,4 @@
-# 🎮 DOJO Multi-Account Betting Bot
+# 🎮 DOJO3 Multi-Account Betting Bot
 
 Многопоточный бот для автоматических ставок в игре [Dojo3](https://www.dojo3.io/?inviteCode=DG23U4&sourceType=WEB).  
 Работает с несколькими JWT-токенами параллельно и автоматически делает ставку раз в минуту.
@@ -14,8 +14,8 @@ It runs multiple JWT tokens in parallel and places a bet once per minute.
    Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourname/deathfun-bot.git
-cd deathfun-bot
+git clone https://github.com/ArtVandalism/dojo3-bet-bot.git
+cd dojo3-bet-bot
 npm install
 ```
 
