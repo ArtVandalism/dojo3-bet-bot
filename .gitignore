@@ -17,3 +17,7 @@ logs/
 
 # System
 Thumbs.db
+
+*.py
+*.cmd
+.idea/
